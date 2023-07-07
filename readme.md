@@ -9,11 +9,14 @@ Beginner-friendly code with no Javascript.
 
 ## Editing
 Since this is a super simple and straightforward project, everything should be simple and straightforward to edit. If however you need help getting started, keep reading.
+
 > preview.png accounts for most of this folder's size but is only needed for the Readme. If you are going to host a copy of this anywhere, remove it to minimize size.
 
 ### Layout
 The CSS simulates a 12 column grid in its most basic form. 12 is a nice number that can be divided in 2, 3, 4 and 6, making it pretty versatile.
+
 You can create a grid inside any element of the page by giving it the `.container` class.
+
 Then, give its children classes going from `.c1` to `.c12` to assign them a width equivalent to the number of columns they should occupy.
 
 For instance, splitting a container in two equally sized divs should look like this:
@@ -64,5 +67,4 @@ I initially made this template a couple years ago for a website that never saw t
 If you ever end up using it, feel free to drop me a message, I always love to see my creation in the wild.
 
 ## Contributing
-Feel free to raise issues you may encounter. While this is not actively maintained at all, 
-I am not particularly interested in recieving code contributions, 
+Feel free to raise issues you may encounter. While this is not actively maintained at all, I may fix some stuff here and there.
