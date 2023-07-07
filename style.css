@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+/*--------------*/
+
+/*--- LAYOUT ---*/
+
+/*--------------*/
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.c12 {
+    width: 100%;
+}
+
+.c11 {
+    width: 91.67%;
+}
+
+.c10 {
+    width: 83.33%;
+}
+
+.c9 {
+    width: 75%;
+}
+
+.c8 {
+    width: 66.67%;
+}
+
+.c7 {
+    width: 58.33%;
+}
+
+.c6 {
+    width: 50%;
+}
+
+.c5 {
+    width: 41.67%;
+}
+
+.c4 {
+    width: 33.33%;
+}
+
+.c3 {
+    width: 25%;
+}
+
+.c2 {
+    width: 16.67%;
+}
+
+.c1 {
+    width: 8.33%;
+}
+
+/*-------------*/
+
+/*--- STYLE ---*/
+
+/*-------------*/
+
+:root {
+    --accent: #fecc2d;
+    --background: #1d1d1d;
+    --panel-bg: #232323;
+    --borders: #313131;
+    --text-darkBG: #b5b5b5;
+    --text-lightBG: #232323;
+
+    background-color: var(--background);
+    cursor: not-allowed;
+
+    font-family: Helvetica Neue, Helvetica, Roboto, Calibri, Arial, sans-serif;
+    line-height: 1.4em;
+    color: var(--text-darkBG);
+
+}
+
+::-moz-selection {
+    color: var(--text-lightBG);
+    background: var(--accent);
+}
+
+::selection {
+    color: var(--text-lightBG);
+    background: var(--accent);
+}
+
+main {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--borders);
+    box-shadow: 0 0 20px 20px #111111;
+    transition: all ease-in-out 1s;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        min-width: 100%;
+        height: 100%;
+    }
+}
+
+main:hover {
+    border: 1px solid var(--accent);
+}
+
+section {
+    padding: 30px;
+    height: 100%;
+}
+
+section:not(:last-of-type) {
+    border-bottom: 1px solid var(--borders);
+}
+
+h1,
+.accent {
+    color: var(--accent);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+h3:before {
+    content: "> ";
+    color: var(--accent);
+}
+
+.social {
+    margin: 10px auto;
+    max-width: 50px;
+}
+
+.field {
+    font-family: Fira Code, Fira Mono, monospace;
+    font-size: .8em;
+    line-height: 3em;
+    background-color: var(--background);
+    text-align: center;
+    border: 1px solid var(--borders);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+#social-box div {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #social-box div {
+        min-width: 100%;
+    }
+}
